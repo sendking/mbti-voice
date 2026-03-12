@@ -1,0 +1,30 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef7ff" />
+      <stop offset="100%" stop-color="#f8fcff" />
+    </linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#33a474" />
+      <stop offset="100%" stop-color="#4298b4" />
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1200" height="900" fill="url(#bg)" rx="56" />
+  <circle cx="220" cy="170" r="120" fill="#88619a" fill-opacity="0.16" />
+  <circle cx="1030" cy="280" r="150" fill="#4298b4" fill-opacity="0.14" />
+  <circle cx="860" cy="700" r="180" fill="#33a474" fill-opacity="0.12" />
+
+  <ellipse cx="600" cy="610" rx="280" ry="88" fill="#d7e8f8" />
+
+  <circle cx="600" cy="292" r="64" fill="#ffd8c2" />
+  <rect x="500" y="350" width="200" height="250" rx="72" fill="url(#cloth)" />
+  <rect x="420" y="430" width="120" height="36" rx="18" fill="#ffd8c2" transform="rotate(22 420 430)" />
+  <rect x="660" y="430" width="120" height="36" rx="18" fill="#ffd8c2" transform="rotate(-22 660 430)" />
+
+  <rect x="575" y="430" width="50" height="120" rx="24" fill="#ffffff" />
+  <rect x="588" y="468" width="24" height="72" rx="12" fill="#c9d9ee" />
+
+  <ellipse cx="600" cy="445" rx="210" ry="116" fill="none" stroke="#33a474" stroke-opacity="0.4" stroke-width="8" />
+  <ellipse cx="600" cy="445" rx="250" ry="140" fill="none" stroke="#4298b4" stroke-opacity="0.33" stroke-width="8" />
+  <ellipse cx="600" cy="445" rx="292" ry="164" fill="none" stroke="#88619a" stroke-opacity="0.3" stroke-width="8" />
+</svg>

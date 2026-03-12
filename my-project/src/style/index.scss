@@ -1,0 +1,55 @@
+// 测试用的 iconfont，可生效
+// @import './iconfont.css';
+
+.test {
+  // 可以通过 @apply 多个样式封装整体样式
+  @apply mt-4 ml-4;
+
+  padding-top: 4px;
+  color: red;
+}
+
+:root,
+page {
+  --mbti-analyst: #88619a;
+  --mbti-diplomat: #33a474;
+  --mbti-sentinel: #4298b4;
+  --mbti-explorer: #e4ae3a;
+
+  --mbti-bg-light: #f8fafc;
+  --mbti-text-main: #1f2a3c;
+  --mbti-text-sub: #5f6f8a;
+  --mbti-card-radius: 32rpx;
+  --mbti-shadow: 0 16rpx 36rpx rgba(93, 116, 161, 0.12);
+  --mbti-font-main: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --mbti-font-number: 'DIN Alternate', 'Avenir Next', 'Helvetica Neue', sans-serif;
+
+  // 修改按主题色
+  // --wot-color-theme: #37c2bc;
+
+  // 修改按钮背景色
+  // --wot-button-primary-bg-color: green;
+}
+
+page {
+  font-family: var(--mbti-font-main);
+  background: var(--mbti-bg-light);
+  color: var(--mbti-text-main);
+}
+
+/*
+border-t-1
+由于uniapp中无法使用*选择器，使用魔法代替*，加上此规则可以简化border与divide的使用，并提升布局的兼容性
+1. 防止padding和border影响元素宽度。 (https://github.com/mozdevs/cssremedy/issues/4)
+2. 允许仅通过添加边框宽度来向元素添加边框。 (https://github.com/tailwindcss/tailwindcss/pull/116)
+3. [UnoCSS]: 允许使用css变量'--un-default-border-color'覆盖默认边框颜色
+*/
+// 这个样式有重大BUG，先去掉！！(2025-08-15)
+// :not(not),
+// ::before,
+// ::after {
+//   box-sizing: border-box; /* 1 */
+//   border-width: 0; /* 2 */
+//   border-style: solid; /* 2 */
+//   border-color: var(--un-default-border-color, #e5e7eb); /* 3 */
+// }
